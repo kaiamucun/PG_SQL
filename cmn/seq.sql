@@ -1,0 +1,18 @@
+SET NAMES utf8mb4;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- seqテーブルの作成
+DROP TABLE IF EXISTS seq;
+
+CREATE TABLE seq (
+    seq_key VARCHAR(20) NOT NULL COMMENT 'シーケンスキー',
+    seq_no BIGINT DEFAULT 1 COMMENT 'シーケンス番号',
+    PRIMARY KEY (seq_key)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+START TRANSACTION;
+
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1; 

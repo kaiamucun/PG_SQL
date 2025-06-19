@@ -1,0 +1,18 @@
+SET NAMES utf8mb4;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- htmlテーブルの作成
+DROP TABLE IF EXISTS html;
+
+CREATE TABLE html (
+    html_no INT NOT NULL AUTO_INCREMENT COMMENT 'HTML番号',
+    html_content TEXT DEFAULT NULL COMMENT '内容（from RFT）空文字OK',
+    PRIMARY KEY (html_no)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+START TRANSACTION;
+
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1; 

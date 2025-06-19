@@ -1,0 +1,18 @@
+SET NAMES utf8mb4;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- cache_infoテーブルの作成
+DROP TABLE IF EXISTS cache_info;
+
+CREATE TABLE cache_info (
+    cache_id VARCHAR(40) NOT NULL COMMENT 'キャッシュID',
+    update_dt DATETIME DEFAULT NULL COMMENT '更新日時',
+    PRIMARY KEY (cache_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+START TRANSACTION;
+
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1; 
