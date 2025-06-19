@@ -12,6 +12,9 @@ CREATE TABLE pickup_item_as_game (
     game_price INT DEFAULT NULL COMMENT '宣伝用リング参加費',
     game_price_unit VARCHAR(3) DEFAULT NULL COMMENT 'JPY, USD, PHP,,,',
     game_player_count INT DEFAULT NULL COMMENT '手動更新（リング総人数）',
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (pickup_item_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

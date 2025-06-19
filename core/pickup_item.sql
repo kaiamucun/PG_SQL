@@ -8,6 +8,9 @@ DROP TABLE IF EXISTS pickup_item;
 CREATE TABLE pickup_item (
     pickup_item_no INT AUTO_INCREMENT COMMENT '[auto increment]',
     pickup_item_type VARCHAR(10) DEFAULT NULL COMMENT 'tournament, pr, game',
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (pickup_item_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

@@ -8,6 +8,9 @@ DROP TABLE IF EXISTS media;
 CREATE TABLE media (
     media_no INT AUTO_INCREMENT COMMENT '[auto increment]',
     media_name VARCHAR(40) DEFAULT NULL COMMENT 'メディア名（PokerGuild運営）',
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (media_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

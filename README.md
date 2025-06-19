@@ -1,111 +1,96 @@
-# PG SQL Repository
+# PG_SQL レギュレーション準拠テーブル定義
 
-PG（ポーカーゲーム）のデータベーススキーマとマスタデータを格納するリポジトリです。
+## 概要
+このプロジェクトは、レギュレーションに従って論理削除機能を実装したSQLテーブル定義集です。
 
-## 📁 プロジェクト構造
+## レギュレーション適用済み
+✅ 全テーブルに共通カラムを追加
+✅ 論理削除機能実装
+✅ PostgreSQL重複定義削除（MySQL形式で統一）
 
+## 共通カラム（全テーブル共通）
+```sql
+enabled     TINYINT DEFAULT 1 COMMENT '論理削除フラグ'
+created_at  DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時'
+updated_at  DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時'
 ```
-PG_SQL/
-├── cmn/          # 共通システム関連テーブル
-├── core/         # コアビジネスロジック関連テーブル  
-├── tag/          # タグシステム関連テーブル
-└── README.md
+
+## 論理削除の使用方法
+
+### SELECT時の必須ルール
+**必ず `WHERE enabled=1` 条件を含める**
+```sql
+-- ✅ 正しい例
+SELECT * FROM admin_user WHERE enabled=1;
+SELECT * FROM room WHERE enabled=1 AND room_name LIKE '%ギルド%';
+
+-- ❌ 間違った例（レギュレーション違反）
+SELECT * FROM admin_user;
+SELECT * FROM room WHERE room_name LIKE '%ギルド%';
 ```
 
-## 📋 ディレクトリ詳細
+### 削除操作
+**物理削除は禁止、論理削除のみ実行**
+```sql
+-- ✅ 正しい削除方法（論理削除）
+UPDATE admin_user SET enabled=0 WHERE user_id='target_user';
+UPDATE room SET enabled=0 WHERE room_no=1;
 
-### 🔧 cmn/ - 共通システムテーブル
-アプリケーション全体で使用される共通機能のテーブル定義
+-- ❌ 間違った削除方法（物理削除禁止）
+DELETE FROM admin_user WHERE user_id='target_user';
+DELETE FROM room WHERE room_no=1;
+```
 
-- `app_info.sql` - アプリケーション情報（バージョン、メンテナンス情報等）
-- `cache_info.sql` - キャッシュ管理情報
-- `html.sql` - HTML コンテンツ管理
-- `img.sql` - 画像ファイル管理
-- `seq.sql` - シーケンス番号管理
+### 復元操作
+```sql
+-- 論理削除されたデータの復元
+UPDATE admin_user SET enabled=1 WHERE user_id='target_user';
+```
 
-### 🎯 core/ - メインビジネスロジック
-ポーカーゲームの中核となる機能のテーブル定義
+### 完全削除データの確認
+```sql
+-- 論理削除されたデータの確認
+SELECT * FROM admin_user WHERE enabled=0;
+```
 
-#### 管理者・組織関連
+## テーブル一覧
+
+### core ディレクトリ
 - `admin_announce.sql` - 管理者お知らせ
-- `admin_org_action.sql` - 組織アクション管理
-- `admin_org_img.sql` - 組織画像管理
-- `admin_user_org.sql` - ユーザー組織関連管理
+- `admin_org_action.sql` - 管理者組織アクション
+- `admin_org_img.sql` - 管理者組織画像
+- `admin_user_org.sql` - 管理者ユーザー組織
 - `admin_user.sql` - 管理者ユーザー
-
-#### ブランド・イベント関連
 - `brand_event.sql` - ブランドイベント
-- `brand.sql` - ブランド情報
-- `event.sql` - イベント情報
-- `media.sql` - メディア管理
+- `brand.sql` - ブランド
+- `event.sql` - イベント
+- `media.sql` - メディア
 - `news.sql` - ニュース
-
-#### 組織・オーナー関連
-- `org.sql` - 組織マスタ（店舗など）
-- `owner_as_info.sql` - オーナー追加情報
-- `owner_category_photo.sql` - オーナーカテゴリ写真
-- `owner_category.sql` - オーナーカテゴリ
-- `owner_html.sql` - オーナーHTML情報
-- `owner_ring_price.sql` - オーナーリング価格設定
-- `owner_ring_table.sql` - オーナーリングテーブル
-- `owner_url.sql` - オーナーURL情報
-- `owner.sql` - オーナー情報
-
-#### ルーム・店舗関連
-- `room_book_pickup_item.sql` - ルーム予約ピックアップアイテム
-- `room_opening_hours.sql` - ルーム営業時間
-- `room_pickup_item.sql` - ルームピックアップアイテム
-- `room_pickup.sql` - ルームピックアップ
-- `room.sql` - ルーム情報（店舗マスタ）
-
-#### トーナメント関連
-- `tournament_price.sql` - トーナメント価格設定
-- `tournament_structure.sql` - トーナメント構造
-- `tournament.sql` - トーナメント情報
-
-#### ピックアップアイテム関連
-- `pickup_item_as_game.sql` - ゲーム関連ピックアップ
-- `pickup_item_as_pr.sql` - PR関連ピックアップ  
-- `pickup_item_as_tournament.sql` - トーナメント関連ピックアップ
+- `org.sql` - 組織
+- `owner.sql` - オーナー
 - `pickup_item.sql` - ピックアップアイテム
+- `room.sql` - ルーム
+- `tournament.sql` - トーナメント
+- `tournament_price.sql` - トーナメント価格
+- `tournament_structure.sql` - トーナメント構造
 
-### 🏷️ tag/ - タグシステム
-階層化されたタグシステムの定義
+### cmn ディレクトリ（共通）
+- `app_info.sql` - アプリ情報
+- `cache_info.sql` - キャッシュ情報
+- `html.sql` - HTML
+- `img.sql` - 画像
+- `seq.sql` - シーケンス
 
-- `tag_content.sql` - タグコンテンツ関連
-- `tag_owner.sql` - タグオーナー関連
-- `tag.sql` - タグマスタ（国、地域、都道府県、エリア等の階層構造）
+### tag ディレクトリ
+- `tag.sql` - タグ
+- `tag_content.sql` - タグコンテンツ
+- `tag_owner.sql` - タグオーナー
 
-## 🗄️ 主要テーブル概要
+## 注意事項
+1. **論理削除のみ使用**：物理削除は行わない
+2. **SELECT時必須条件**：必ず `WHERE enabled=1` を含める
+3. **キャッシュ注意**：物理削除した場合、キャッシュデータが残る可能性があるため論理削除を使用
+4. **自動設定**：`created_at`と`updated_at`は自動で設定される
 
-### room テーブル
-- ポーカールーム（店舗）の基本情報
-- 風営法・特定遊興許可情報
-- 提携店舗フラグ等を管理
-
-### tournament テーブル
-- トーナメント基本情報（名前、説明、形式）
-- 参加費、賞金プール、参加者数管理
-- スケジュール情報（開始時間、終了予定時間等）
-- ステータス管理（予定、受付中、進行中、完了等）
-
-### org テーブル  
-- 組織情報（PG本体、各ルーム等）
-- 組織タイプとプレフィックス管理
-
-### tag テーブル
-- 地理的タグ（国→地域→都道府県→エリアの階層構造）
-- 検索用キーワード（ひらがな、カタカナ、英語対応）
-
-## 🚀 使用方法
-
-1. 各SQLファイルはそれぞれ独立して実行可能
-2. トランザクション管理とエラーハンドリングを含む
-3. 文字コード設定（UTF8MB4）対応
-4. 外部キー制約の適切な管理
-
-## 📝 注意事項
-
-- SQLファイルは本番環境での使用を前提として設計
-- マスタデータの投入も含まれているため、実行時は注意が必要
-- 外部キー制約の整合性を保つため、適切な順序での実行推奨
+## 更新履歴
+- 2025年: レギュレーション準拠対応完了（共通カラム追加、論理削除実装）

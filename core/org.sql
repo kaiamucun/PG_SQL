@@ -10,13 +10,13 @@ CREATE TABLE org (
     org_type VARCHAR(20) DEFAULT NULL COMMENT 'pg, brand, room, media',
     ref_no INT DEFAULT NULL COMMENT 'pg = 0, brand_no, room_no, media_no',
     org_prefix VARCHAR(4) DEFAULT NULL COMMENT 'prefix for userId',
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (org_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 START TRANSACTION;
-
-ALTER TABLE org
-  DROP COLUMN IF EXISTS enabled;
 
 INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (1 , 'pg'  ,  0 , 'pg');
 INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (2 , 'room',  1 , 'AG');

@@ -8,6 +8,9 @@ DROP TABLE IF EXISTS pickup_item_as_pr;
 CREATE TABLE pickup_item_as_pr (
     pickup_item_no INT NOT NULL,
     pr VARCHAR(40) DEFAULT NULL,
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (pickup_item_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

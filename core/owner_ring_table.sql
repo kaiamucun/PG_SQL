@@ -14,6 +14,9 @@ CREATE TABLE owner_ring_table (
     giant_blind INT DEFAULT NULL,
     ante INT DEFAULT NULL,
     max_buyin INT DEFAULT NULL,
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (owner_no, table_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

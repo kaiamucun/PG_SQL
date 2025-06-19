@@ -9,6 +9,9 @@ CREATE TABLE owner_url (
     owner_no INT NOT NULL,
     url_type VARCHAR(10) NOT NULL COMMENT 'site, twitter, instagram',
     url VARCHAR(191) DEFAULT NULL,
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (owner_no, url_type)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

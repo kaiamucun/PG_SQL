@@ -12,6 +12,9 @@ CREATE TABLE tournament_price (
     price INT DEFAULT NULL,
     stack INT DEFAULT NULL,
     remark VARCHAR(20) DEFAULT NULL,
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (tournament_no, price_type)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

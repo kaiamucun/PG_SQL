@@ -2,48 +2,39 @@ SET NAMES utf8mb4;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
--- ownerテーブルの作成 (care by SearchEngine)
 DROP TABLE IF EXISTS owner;
 
 CREATE TABLE owner (
     owner_no INT AUTO_INCREMENT COMMENT '[auto increment]',
     owner_type VARCHAR(20) DEFAULT NULL COMMENT 'room, event, media',
     ref_no INT DEFAULT NULL COMMENT 'room_no, event_no, media_no',
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (owner_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 START TRANSACTION;
 
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(1,'room',1);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(2,'room',2);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(3,'room',3);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(4,'room',4);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(5,'room',5);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(6,'room',6);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(7,'room',7);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(8,'room',8);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(9,'room',9);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(10,'room',10);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(11,'room',11);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(12,'room',12);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(13,'room',13);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(14,'room',14);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(15,'room',15);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(16,'room',16);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(17,'room',17);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(18,'room',18);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(19,'room',19);
+INSERT INTO owner(owner_no,owner_type,ref_no) VALUES(20,'room',20);
+
 COMMIT;
-
-SET FOREIGN_KEY_CHECKS = 1;
-
--- owner table (care by SearchEngine)
-CREATE TABLE owner (
-    id BIGSERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    display_name VARCHAR(255),
-    email VARCHAR(255) UNIQUE,
-    phone VARCHAR(50),
-    address TEXT,
-    business_type VARCHAR(100),
-    license_number VARCHAR(100),
-    tax_id VARCHAR(50),
-    website_url VARCHAR(512),
-    social_media JSONB,
-    verification_status VARCHAR(50) DEFAULT 'pending', -- 'pending', 'verified', 'rejected'
-    is_active BOOLEAN DEFAULT TRUE,
-    search_engine_indexed BOOLEAN DEFAULT FALSE,
-    search_keywords TEXT,
-    seo_description TEXT,
-    last_search_update TIMESTAMP,
-    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE INDEX idx_owner_email ON owner(email);
-CREATE INDEX idx_owner_name ON owner(name);
-CREATE INDEX idx_owner_verification_status ON owner(verification_status);
-CREATE INDEX idx_owner_is_active ON owner(is_active);
-CREATE INDEX idx_owner_search_engine_indexed ON owner(search_engine_indexed);
-CREATE INDEX idx_owner_search_keywords ON owner USING GIN(to_tsvector('english', search_keywords)); 

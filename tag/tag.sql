@@ -12,6 +12,9 @@ CREATE TABLE tag (
     hit_csv VARCHAR(191) DEFAULT NULL COMMENT '検索ヒット用語（CSV）',
     order_no INT DEFAULT NULL COMMENT '並び順（ASC）[Admin用]',
     parent_no INT DEFAULT NULL COMMENT 'コンポジットパターン',
+    enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '作成日時',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
     PRIMARY KEY (tag_type, tag_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
