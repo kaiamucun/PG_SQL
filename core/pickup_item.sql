@@ -2,7 +2,6 @@ SET NAMES utf8mb4;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
--- pickup_itemテーブルの作成
 DROP TABLE IF EXISTS pickup_item;
 
 CREATE TABLE pickup_item (
@@ -16,28 +15,165 @@ CREATE TABLE pickup_item (
 
 START TRANSACTION;
 
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(1,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(2,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(3,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(4,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(5,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(6,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(7,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(8,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(9,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(10,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(11,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(12,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(13,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(14,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(15,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(16,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(17,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(18,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(19,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(20,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(21,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(22,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(23,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(24,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(25,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(26,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(27,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(28,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(29,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(30,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(31,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(32,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(33,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(34,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(35,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(36,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(37,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(38,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(39,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(40,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(41,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(42,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(43,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(44,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(45,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(46,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(47,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(48,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(49,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(50,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(51,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(52,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(53,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(54,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(55,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(56,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(57,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(58,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(59,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(60,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(61,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(62,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(63,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(64,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(65,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(66,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(67,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(68,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(69,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(70,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(71,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(72,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(73,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(74,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(75,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(76,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(77,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(78,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(79,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(80,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(81,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(82,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(83,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(84,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(85,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(86,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(87,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(88,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(89,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(90,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(91,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(92,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(93,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(94,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(95,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(96,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(97,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(98,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(99,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(100,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(101,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(102,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(103,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(104,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(105,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(106,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(107,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(108,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(109,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(110,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(111,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(112,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(113,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(114,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(115,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(116,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(117,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(118,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(119,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(120,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(121,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(122,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(123,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(124,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(125,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(126,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(127,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(128,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(129,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(130,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(131,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(132,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(133,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(134,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(135,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(136,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(137,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(138,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(139,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(140,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(141,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(142,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(143,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(144,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(145,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(146,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(147,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(148,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(149,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(150,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(151,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(152,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(153,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(154,'tournament');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(155,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(156,'pr');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(157,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(158,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(159,'game');
+INSERT INTO pickup_item(pickup_item_no,pickup_item_type) VALUES(160,'game');
+
 COMMIT;
-
-SET FOREIGN_KEY_CHECKS = 1;
-
-CREATE TABLE pickup_item (
-    id BIGSERIAL PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    description TEXT,
-    content TEXT,
-    image_url VARCHAR(512),
-    link_url VARCHAR(512),
-    item_type VARCHAR(50) NOT NULL, -- 'tournament', 'pr', 'game', etc.
-    status VARCHAR(50) DEFAULT 'active',
-    priority INTEGER DEFAULT 0,
-    start_date TIMESTAMP,
-    end_date TIMESTAMP,
-    view_count INTEGER DEFAULT 0,
-    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE INDEX idx_pickup_item_item_type ON pickup_item(item_type);
-CREATE INDEX idx_pickup_item_status ON pickup_item(status);
-CREATE INDEX idx_pickup_item_dates ON pickup_item(start_date, end_date);
-CREATE INDEX idx_pickup_item_priority ON pickup_item(priority); 

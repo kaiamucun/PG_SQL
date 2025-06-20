@@ -2,7 +2,6 @@ SET NAMES utf8mb4;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
--- brand_eventテーブルの作成
 DROP TABLE IF EXISTS brand_event;
 
 CREATE TABLE brand_event (
@@ -16,28 +15,19 @@ CREATE TABLE brand_event (
 
 START TRANSACTION;
 
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 1);
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 2);
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 3);
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 4);
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 5);
+INSERT INTO brand_event(brand_no, event_no) VALUES(2, 6);
+INSERT INTO brand_event(brand_no, event_no) VALUES(4, 7);
+INSERT INTO brand_event(brand_no, event_no) VALUES(5, 8);
+INSERT INTO brand_event(brand_no, event_no) VALUES(7, 9);
+INSERT INTO brand_event(brand_no, event_no) VALUES(8, 10);
+INSERT INTO brand_event(brand_no, event_no) VALUES(8, 11);
+INSERT INTO brand_event(brand_no, event_no) VALUES(9, 12);
+INSERT INTO brand_event(brand_no, event_no) VALUES(10, 13);
+INSERT INTO brand_event(brand_no, event_no) VALUES(20, 14);
+
 COMMIT;
-
-SET FOREIGN_KEY_CHECKS = 1;
-
--- brand_event table
-CREATE TABLE brand_event (
-    id BIGSERIAL PRIMARY KEY,
-    brand_id BIGINT NOT NULL,
-    event_id BIGINT NOT NULL,
-    partnership_type VARCHAR(100), -- 'sponsor', 'organizer', 'partner', etc.
-    contribution_level VARCHAR(50), -- 'platinum', 'gold', 'silver', 'bronze'
-    sponsorship_amount DECIMAL(12,2),
-    benefits TEXT,
-    contract_start_date DATE,
-    contract_end_date DATE,
-    is_active BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (brand_id) REFERENCES brand(id) ON DELETE CASCADE,
-    FOREIGN KEY (event_id) REFERENCES event(id) ON DELETE CASCADE
-);
-
-CREATE INDEX idx_brand_event_brand_id ON brand_event(brand_id);
-CREATE INDEX idx_brand_event_event_id ON brand_event(event_id);
-CREATE INDEX idx_brand_event_partnership_type ON brand_event(partnership_type); 
