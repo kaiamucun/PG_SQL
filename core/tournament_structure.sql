@@ -25,7 +25,3 @@ START TRANSACTION;
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
-
-CREATE INDEX idx_tournament_structure_tournament_id ON tournament_structure(tournament_no);
-CREATE INDEX idx_tournament_structure_level_number ON tournament_structure(level);
-CREATE INDEX idx_tournament_structure_is_break ON tournament_structure(level); 

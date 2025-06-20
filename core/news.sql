@@ -26,39 +26,3 @@ START TRANSACTION;
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
-
--- news table
-CREATE TABLE news (
-    id BIGSERIAL PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    slug VARCHAR(255) UNIQUE,
-    summary TEXT,
-    content TEXT,
-    featured_image_url VARCHAR(512),
-    author_id BIGINT,
-    category VARCHAR(100), -- 'tournament', 'promotion', 'general', 'update', etc.
-    tags TEXT,
-    status VARCHAR(50) DEFAULT 'draft', -- 'draft', 'published', 'archived'
-    is_featured BOOLEAN DEFAULT FALSE,
-    is_breaking BOOLEAN DEFAULT FALSE,
-    priority INTEGER DEFAULT 0,
-    view_count INTEGER DEFAULT 0,
-    like_count INTEGER DEFAULT 0,
-    share_count INTEGER DEFAULT 0,
-    published_at TIMESTAMP,
-    expires_at TIMESTAMP,
-    seo_title VARCHAR(255),
-    seo_description TEXT,
-    seo_keywords TEXT,
-    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE INDEX idx_news_title ON news(title);
-CREATE INDEX idx_news_slug ON news(slug);
-CREATE INDEX idx_news_author_id ON news(author_id);
-CREATE INDEX idx_news_category ON news(category);
-CREATE INDEX idx_news_status ON news(status);
-CREATE INDEX idx_news_published_at ON news(published_at);
-CREATE INDEX idx_news_is_featured ON news(is_featured);
-CREATE INDEX idx_news_priority ON news(priority); 

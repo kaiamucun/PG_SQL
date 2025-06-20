@@ -22,8 +22,3 @@ START TRANSACTION;
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
-
-CREATE INDEX idx_admin_org_action_org_id ON admin_org_action(org_no);
-CREATE INDEX idx_admin_org_action_action_type ON admin_org_action(action_type);
-CREATE INDEX idx_admin_org_action_seq ON admin_org_action(seq);
-CREATE INDEX idx_admin_org_action_user_id ON admin_org_action(user_id); 

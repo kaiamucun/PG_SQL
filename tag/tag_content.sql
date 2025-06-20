@@ -15,8 +15,10 @@ CREATE TABLE tag_content (
     PRIMARY KEY (search_type, ref_no, tag_no)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- 必要に応じてインデックスを追加
-CREATE INDEX idx_tag_content_tag_no ON tag_content(tag_no);
-CREATE INDEX idx_tag_content_search_type ON tag_content(search_type);
+START TRANSACTION;
+
+COMMIT;
+
+
 
 SET FOREIGN_KEY_CHECKS = 1; 
