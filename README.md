@@ -93,4 +93,5 @@ SELECT * FROM admin_user WHERE enabled=0;
 4. **自動設定**：`created_at`と`updated_at`は自動で設定される
 
 ## 更新履歴
+- 2025-06-20: 最新データベースダンプと同期（tournamentテーブルに40件のデータ追加、pickup_item_as_prテーブル更新）
 - 2025年: レギュレーション準拠対応完了（共通カラム追加、論理削除実装）

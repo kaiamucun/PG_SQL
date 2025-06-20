@@ -64,4 +64,7 @@ INSERT INTO tournament(tournament_no,tournament_name,start_dt,late_dt,end_dt,bli
 INSERT INTO tournament(tournament_no,tournament_name,start_dt,late_dt,end_dt,blind_min,detail_html_no,entry_price,entry_price_unit,owner_no) VALUES(38,'✨GRAND OPEN✨#6 タッグ戦‼️500,000相当✨18時まで早割‼️レイト21時半‼️','2025-07-01 17:00:00','2025-07-01 21:30:00','2025-07-01 23:30:00',20,38,13000,'JPY',19);
 INSERT INTO tournament(tournament_no,tournament_name,start_dt,late_dt,end_dt,blind_min,detail_html_no,entry_price,entry_price_unit,owner_no) VALUES(39,'21万保証❣️プライズマッチ❤化猫月間P‼','2025-07-01 18:00:00','2025-07-01 21:50:00','2025-07-02 00:00:00',20,39,8500,'JPY',20);
 INSERT INTO tournament(tournament_no,tournament_name,start_dt,late_dt,end_dt,blind_min,detail_html_no,entry_price,entry_price_unit,owner_no) VALUES(40,'6.5万保証❣終電まで❤️化猫月間P!!','2025-07-01 21:00:00','2025-07-01 22:50:00','2025-07-02 05:00:00',20,40,8500,'JPY',20);
+
 COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;
