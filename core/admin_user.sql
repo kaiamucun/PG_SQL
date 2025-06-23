@@ -22,7 +22,54 @@ CREATE TABLE admin_user (
 
 START TRANSACTION;
 
+-- 既存のmasterユーザー
 INSERT INTO admin_user (user_id, password, user_name, ua, login_dt, access_dt, access_org_no, announce_check_dt) VALUES ('master', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', 'master', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', '2025-06-19 01:35:03.872', '2025-06-19 03:27:07.503', 1, '2025-05-27 09:08:35');
+
+-- ROOM操作ができるadminユーザー3名を追加
+-- パスワードは全て 'password123' をSHA256ハッシュ化した値: ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f
+
+-- 1. room_admin_01 - ROOM管理者1
+INSERT INTO admin_user (user_id,password,user_name,ua,login_dt,access_dt,access_org_no,enabled,created_at,updated_at
+) VALUES (
+    'room_admin_01',
+    'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', -- SHA256('password123')
+    'ROOM管理者01',
+    '',
+    '2025-06-19 01:35:03.872',
+    '2025-06-19 03:27:07.503',
+    20,
+    1,
+    NOW(),
+    NOW()
+);
+
+-- 2. room_admin_02 - ROOM管理者2
+INSERT INTO admin_user (user_id,password,user_name,ua,login_dt,access_dt,access_org_no,enabled,created_at,updated_at) VALUES (
+    'room_admin_02',
+    'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', -- SHA256('password123')
+    'ROOM管理者02',
+    '',
+    '2025-06-19 01:35:03.872',
+    '2025-06-19 03:27:07.503',
+    20,
+    1,
+    NOW(),
+    NOW()
+);
+
+-- 3. room_admin_03 - ROOM管理者3
+INSERT INTO admin_user (user_id,password,user_name,ua,login_dt,access_dt,access_org_no,enabled,created_at,updated_at) VALUES (
+    'room_admin_03',    
+    'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', -- SHA256('password123')
+    'ROOM管理者03',
+    '',
+    '2025-06-19 01:35:03.872',
+    '2025-06-19 03:27:07.503',
+    18,
+    1,
+    NOW(),
+    NOW()
+);
 
 COMMIT;
 
