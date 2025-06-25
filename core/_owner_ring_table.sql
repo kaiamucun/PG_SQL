@@ -23,6 +23,9 @@ CREATE TABLE owner_ring_table (
 
 START TRANSACTION;
 
+INSERT INTO owner_ring_table(owner_no,table_no,game_tag_no,game_king,small_blind,big_blind,giant_blind,ante,max_buyin) VALUES(1,1,1,'NLH',100,200,400,0,10000);
+
+
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
