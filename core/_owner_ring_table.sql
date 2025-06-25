@@ -9,6 +9,7 @@ CREATE TABLE owner_ring_table (
     owner_no INT NOT NULL,
     table_no INT NOT NULL,
     game_tag_no INT DEFAULT NULL COMMENT 'NLH, PLO, MIX, etc..',
+    game_king VARCHAR(10) DEFAULT NULL COMMENT 'NLH, PLO, MIX, etc..',
     small_blind INT DEFAULT NULL,
     big_blind INT DEFAULT NULL,
     giant_blind INT DEFAULT NULL,
