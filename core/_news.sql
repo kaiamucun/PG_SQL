@@ -13,6 +13,7 @@ CREATE TABLE news (
     publish_dt DATETIME DEFAULT NULL COMMENT '公開日時',
     html_no INT DEFAULT NULL COMMENT '（from RFT）',
     status VARCHAR(10) DEFAULT NULL COMMENT 'draft, published',
+    main_img_id VARCHAR(20) DEFAULT NULL COMMENT 'prefix + img_no',
     thumbnail_img_no INT DEFAULT NULL COMMENT '0:サムネイル無し',
     owner_no INT DEFAULT NULL,
     enabled TINYINT DEFAULT 1 COMMENT '論理削除フラグ',

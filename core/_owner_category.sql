@@ -18,102 +18,146 @@ CREATE TABLE owner_category (
 
 START TRANSACTION;
 
--- アキバギルド(owner_no:1)のカテゴリ
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 269, 3, '初心者講習');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 271, 4, 'フード提供');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 276, 5, 'Wi-Fi');
+-- owner_no 1-20まで、各店舗に6つのカテゴリを作成
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(1, 6, 6, 'その他');
 
--- イケブクロギルド(owner_no:2)のカテゴリ
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 269, 3, '初心者講習');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 272, 4, 'アルコール提供');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 275, 5, '近くに駐車場');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(2, 6, 6, 'その他');
 
--- カジノクエスト(owner_no:3)のカテゴリ
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 268, 3, 'カジノゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 271, 4, 'フード提供');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 273, 5, 'スマホ充電');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(3, 6, 6, 'その他');
 
--- GGPL新宿(owner_no:4)のカテゴリ
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 269, 3, '初心者講習');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 271, 4, 'フード提供');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 276, 5, 'Wi-Fi');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 277, 6, '喫煙所あり');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(4, 6, 6, 'その他');
 
--- GGPL渋谷(owner_no:5)のカテゴリ
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 270, 3, '貸しテーブル');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 272, 4, 'アルコール提供');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 274, 5, '飲み放題プラン');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(5, 6, 6, 'その他');
 
--- 他のオーナー（owner_no:6-20）にも基本的なカテゴリを設定
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 276, 3, 'Wi-Fi');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(6, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 269, 3, '初心者講習');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(7, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 271, 3, 'フード提供');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(8, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 272, 3, 'アルコール提供');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(9, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 273, 3, 'スマホ充電');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(10, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 269, 3, '初心者講習');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(11, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 275, 3, '近くに駐車場');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(12, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 271, 3, 'フード提供');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(13, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 276, 3, 'Wi-Fi');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(14, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 277, 3, '喫煙所あり');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(15, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 269, 3, '初心者講習');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(16, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 271, 3, 'フード提供');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(17, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 272, 3, 'アルコール提供');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(18, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 273, 3, 'スマホ充電');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(19, 6, 6, 'その他');
 
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 266, 1, 'トーナメント');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 267, 2, 'リングゲーム');
-INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 276, 3, 'Wi-Fi');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 1, 1, '店内の様子');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 2, 2, 'キャスト');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 3, 3, 'フード');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 4, 4, 'トーナメントA優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 5, 5, 'トーナメントB優勝者');
+INSERT INTO owner_category(owner_no, category_no, order_no, category_name) VALUES(20, 6, 6, 'その他');
 
 COMMIT;
 
