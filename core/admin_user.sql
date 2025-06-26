@@ -49,6 +49,13 @@ INSERT INTO admin_user (user_id, password, user_name, ua, login_dt, access_dt, a
 INSERT INTO admin_user (user_id, password, user_name, ua, login_dt, access_dt, access_org_no, enabled, created_at, updated_at) VALUES ('room_admin_19', 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'ROOM管理者19(BBEB)', '', '2025-06-19 01:35:03.872', '2025-06-19 03:27:07.503', 20, 1, NOW(), NOW());
 INSERT INTO admin_user (user_id, password, user_name, ua, login_dt, access_dt, access_org_no, enabled, created_at, updated_at) VALUES ('room_admin_20', 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'ROOM管理者20(BKNK)', '', '2025-06-19 01:35:03.872', '2025-06-19 03:27:07.503', 21, 1, NOW(), NOW());
 
+-- EVENT管理用adminユーザーを追加
+-- パスワードは 'password123' をSHA256ハッシュ化した値: ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f
+INSERT INTO admin_user (user_id, password, user_name, ua, login_dt, access_dt, access_org_no, enabled, created_at, updated_at) VALUES ('event_admin', 'ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f', 'EVENT管理者', '', '2025-06-25 01:35:03.872', '2025-06-25 03:27:07.503', 22, 1, NOW(), NOW());
+
+
+
+
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;

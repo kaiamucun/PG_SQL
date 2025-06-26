@@ -15,19 +15,36 @@ CREATE TABLE brand_event (
 
 START TRANSACTION;
 
-INSERT INTO brand_event(brand_no, event_no) VALUES(1, 1);
-INSERT INTO brand_event(brand_no, event_no) VALUES(1, 2);
-INSERT INTO brand_event(brand_no, event_no) VALUES(1, 3);
-INSERT INTO brand_event(brand_no, event_no) VALUES(1, 4);
-INSERT INTO brand_event(brand_no, event_no) VALUES(1, 5);
-INSERT INTO brand_event(brand_no, event_no) VALUES(2, 6);
-INSERT INTO brand_event(brand_no, event_no) VALUES(4, 7);
-INSERT INTO brand_event(brand_no, event_no) VALUES(5, 8);
-INSERT INTO brand_event(brand_no, event_no) VALUES(7, 9);
-INSERT INTO brand_event(brand_no, event_no) VALUES(8, 10);
-INSERT INTO brand_event(brand_no, event_no) VALUES(8, 11);
-INSERT INTO brand_event(brand_no, event_no) VALUES(9, 12);
-INSERT INTO brand_event(brand_no, event_no) VALUES(10, 13);
-INSERT INTO brand_event(brand_no, event_no) VALUES(20, 14);
+-- Japan Open Poker Tour関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 1); -- 2025 Tokyo #02
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 2); -- 2025 Sapporo #02
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 3); -- 2025 Tokyo #03
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 4); -- 2025 Osaka #02
+INSERT INTO brand_event(brand_no, event_no) VALUES(1, 5); -- 2026 Tokyo #01
+
+-- 学生ポーカー選手権 U-30関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(2, 6); -- U-30 2025 SUMMER
+
+-- Spadie Poker League関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(4, 7); -- SPADIE POKER LEAGUE FINAL Season38th
+
+-- 戦国ポーカーツアー関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(5, 8); -- 戦国ポーカーツアー2025-秋の陣-
+
+-- SHINJUKU POKER FES関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(7, 9); -- SHINJUKU POKER FES
+
+-- Top of Poker Championship関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(8, 10); -- TPC Season 14
+INSERT INTO brand_event(brand_no, event_no) VALUES(8, 11); -- TPC Season 15
+
+-- 百花繚乱関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(9, 12); -- 百花繚乱
+
+-- XPT関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(10, 13); -- XPT
+
+-- World Series of Poker関連イベント
+INSERT INTO brand_event(brand_no, event_no) VALUES(20, 14); -- WSOP2025
 
 COMMIT;

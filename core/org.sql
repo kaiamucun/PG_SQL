@@ -39,6 +39,28 @@ INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (18, 'room', 17 , 
 INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (19, 'room', 18 , '8YH');
 INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (20, 'room', 19 , 'BBEB');
 INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (21, 'room', 20 , 'BKNK');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (22, 'brand', 1 , 'JOPT');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (23, 'brand',  2 , 'U30');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (24, 'brand',  3 , 'USTD');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (25, 'brand',  4 , 'MSTS');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (26, 'brand',  5 , 'SPL');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (27, 'brand',  6 , 'SGKT');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (28, 'brand',  7 , 'SBPF');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (29, 'brand',  8 , 'SJPF');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (30, 'brand',  9 , 'TOPC');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (31, 'brand', 10 , 'HKRR');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (32, 'brand', 11 , 'XPT');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (33, 'brand', 12 , 'FRKZ');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (34, 'brand', 13 , 'MJSN');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (35, 'brand', 14 , 'JPF');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (36, 'brand', 15 , 'POIS');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (37, 'brand', 16 , 'AJPC');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (38, 'brand', 17 , 'WSOP');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (39, 'brand', 18 , 'OST');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (40, 'brand', 19 , 'GOLD');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (41, 'brand', 20 , 'NPS');
+INSERT INTO org (org_no, org_type, ref_no, org_prefix) VALUES (42, 'brand', 21 , 'WSP');
+
 
 COMMIT;
 

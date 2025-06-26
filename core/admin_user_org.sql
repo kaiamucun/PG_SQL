@@ -41,6 +41,9 @@ INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('room_
 INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('room_admin_19', 20, 122);  -- BBEB
 INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('room_admin_20', 21, 122);  -- BKNK
 
+-- EVENT管理者はorg_no=1（全体組織）に対して適切な権限を持つ
+INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('event_admin', 1, 506);  -- EVENT管理権限
+
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1; 
