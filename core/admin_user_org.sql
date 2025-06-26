@@ -17,7 +17,7 @@ CREATE TABLE admin_user_org (
 
 START TRANSACTION;
 
-INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('master', 1, 929);
+INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('master', 1, 1023);
 
 -- 各roomごとの管理者を作成（org_no 2-21に対応）
 INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('room_admin_01', 2, 122);   -- AG
@@ -42,7 +42,7 @@ INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('room_
 INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('room_admin_20', 21, 122);  -- BKNK
 
 -- EVENT管理者はorg_no=1（全体組織）に対して適切な権限を持つ
-INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('event_admin', 1, 506);  -- EVENT管理権限
+INSERT INTO admin_user_org (user_id, org_no, permission_bit_flag) VALUES ('event_admin', 1, 1023);  -- EVENT管理権限
 
 COMMIT;
 
