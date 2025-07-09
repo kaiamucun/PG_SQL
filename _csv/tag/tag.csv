@@ -1,81 +1,392 @@
-tag_type,tag_no,tag_name,hit_csv,order_no,parent_no,enabled,created_at,updated_at
-country,1,Japan,"japan,ジャパン,ニホン,ニッポン,日本",1,0,1,NOW(),NOW()
-country,2,Asia,"asia,アジア,トウナンアジア,東南アジア,亜細亜",2,0,1,NOW(),NOW()
-country,3,Europe,"europe,ヨーロッパ,欧州",3,0,1,NOW(),NOW()
-region,4,北海道・東北,"ホッカイドウ,Hokkaido,Tohoku,東北,トウホク",4,1,1,NOW(),NOW()
-region,5,関東,"カントウ,Kanto",5,1,1,NOW(),NOW()
-region,6,中部,"チュウブ,Chubu,関西,Kansai",6,1,1,NOW(),NOW()
-region,7,近畿,"キンキ,kinki,関西,Kansai",7,1,1,NOW(),NOW()
-region,8,中国・四国,"チュウゴク,Chugoku,シコク,シコク",8,1,1,NOW(),NOW()
-region,9,九州・沖縄,"キュウシュウ,Kyushu,オキナワ,Okinawa",9,1,1,NOW(),NOW()
-pref,10,北海道,"ホッカイドウ,Hokkaido",10,4,1,NOW(),NOW()
-pref,11,青森県,"アオモリ,Aomori",11,4,1,NOW(),NOW()
-pref,12,岩手県,"イワテ,Iwate",12,4,1,NOW(),NOW()
-pref,13,宮城県,"ミヤギ,Miyagi",13,4,1,NOW(),NOW()
-pref,14,秋田県,"アキタ,Akita",14,4,1,NOW(),NOW()
-pref,15,山形県,"ヤマガタ,Yamagata",15,4,1,NOW(),NOW()
-pref,16,福島県,"フクシマ,Fukushima",16,4,1,NOW(),NOW()
-pref,17,茨城県,"イバラギ,Ibaraki",17,5,1,NOW(),NOW()
-pref,18,栃木県,"トチギ,Tochigi",18,5,1,NOW(),NOW()
-pref,19,群馬県,"グンマ,Gunma",19,5,1,NOW(),NOW()
-pref,20,埼玉県,"サイタマ,Saitama",20,5,1,NOW(),NOW()
-pref,21,千葉県,"チバ,Chiba",21,5,1,NOW(),NOW()
-pref,22,東京都,"トウキョウ,Tokyo",22,5,1,NOW(),NOW()
-pref,23,神奈川県,"カナガワ,Kanagawa",23,5,1,NOW(),NOW()
-pref,24,新潟県,"ニイガタ,Niigata",24,6,1,NOW(),NOW()
-pref,25,富山県,"トヤマ,Toyama",25,6,1,NOW(),NOW()
-pref,26,石川県,"イシカワ,Ishikawa",26,6,1,NOW(),NOW()
-pref,27,福井県,"フクイ,Fukui",27,6,1,NOW(),NOW()
-pref,28,山梨県,"ヤマナシ,Yamanashi",28,6,1,NOW(),NOW()
-pref,29,長野県,"ナガノ,Nagano",29,6,1,NOW(),NOW()
-pref,30,岐阜県,"ギフ,Gifu",30,6,1,NOW(),NOW()
-pref,31,静岡県,"シズオカ,Shizuoka",31,6,1,NOW(),NOW()
-pref,32,愛知県,"アイチ,Aichi",32,6,1,NOW(),NOW()
-pref,33,三重県,"ミエ,Mie",33,7,1,NOW(),NOW()
-pref,34,滋賀県,"シガ,Shiga",34,7,1,NOW(),NOW()
-pref,35,京都府,"キョウト,Kyoto",35,7,1,NOW(),NOW()
-pref,36,大阪府,"オオサカ,Osaka",36,7,1,NOW(),NOW()
-pref,37,兵庫県,"ヒョウゴ,Hyogo",37,7,1,NOW(),NOW()
-pref,38,奈良県,"ナラ,Nara",38,7,1,NOW(),NOW()
-pref,39,和歌山県,"ワカヤマ,Wakayama",39,7,1,NOW(),NOW()
-pref,40,鳥取県,"トットリ,Tottori",40,8,1,NOW(),NOW()
-pref,41,島根県,"シマネ,Shimane",41,8,1,NOW(),NOW()
-pref,42,岡山県,"オカヤマ,Okayama",42,8,1,NOW(),NOW()
-pref,43,広島県,"ヒロシマ,Hiroshima",43,8,1,NOW(),NOW()
-pref,44,山口県,"ヤマグチ,Yamaguchi",44,8,1,NOW(),NOW()
-pref,45,徳島県,"トクシマ,Tokushima",45,8,1,NOW(),NOW()
-pref,46,香川県,"カガワ,Kagawa",46,8,1,NOW(),NOW()
-pref,47,愛媛県,"エヒメ,Ehime",47,8,1,NOW(),NOW()
-pref,48,高知県,"コウチ,Kochi",48,8,1,NOW(),NOW()
-pref,49,福岡県,"フクオカ,Fukuoka",49,9,1,NOW(),NOW()
-pref,50,佐賀県,"サガ,Saga",50,9,1,NOW(),NOW()
-pref,51,長崎県,"ナガサキ,Nagasaki",51,9,1,NOW(),NOW()
-pref,52,熊本県,"クマモト,Kumamoto",52,9,1,NOW(),NOW()
-pref,53,大分県,"オオイタ,Oita",53,9,1,NOW(),NOW()
-pref,54,宮崎県,"ミヤザキ,Miyazaki",54,9,1,NOW(),NOW()
-pref,55,鹿児島県,"カゴシマ,Kagoshima",55,9,1,NOW(),NOW()
-pref,56,沖縄県,"オキナワ,Okinawa",56,9,1,NOW(),NOW()
-area,57,旭川,"アサヒカワ,Asahikawa",57,10,1,NOW(),NOW()
-area,58,函館,"ハコダテ,Hakodate",58,10,1,NOW(),NOW()
-area,59,帯広,"オビヒロ,Obihiro",59,10,1,NOW(),NOW()
-area,60,すすきの,"ススキノ,Susukino",60,10,1,NOW(),NOW()
-area,61,道東中標津,"ドウトウナカシベツ,Doutounakashibetsu",61,10,1,NOW(),NOW()
-area,62,北見,"キタミ,Kitami",62,10,1,NOW(),NOW()
-area,63,苫小牧,"トマコマイ,Tomakomai",63,10,1,NOW(),NOW()
-area,64,千歳,"チトセ,Chitose",64,10,1,NOW(),NOW()
-area,65,釧路,"クシロ,Kushiro",65,10,1,NOW(),NOW()
-area,66,八戸,"ハチノヘ,Hachinohe",66,11,1,NOW(),NOW()
-area,67,盛岡,"モリオカ,Morioka",67,12,1,NOW(),NOW()
-area,68,仙台,"センダイ,Sendai",68,13,1,NOW(),NOW()
-area,69,秋田,"アキタ,Akita",69,14,1,NOW(),NOW()
-area,70,由利本荘,"ユリホンジョウ,Yurihonjo",70,14,1,NOW(),NOW()
-area,71,川反,"カワバタ,Kawabata",71,14,1,NOW(),NOW()
-area,72,山形,"ヤマガタ,Yamagata",72,15,1,NOW(),NOW()
-area,73,郡山,"コオリヤマ,Koriyama",73,16,1,NOW(),NOW()
-area,74,福島,"フクシマ,Fukushima",74,16,1,NOW(),NOW()
-area,75,いわき,"イワキ,Iwaki",75,16,1,NOW(),NOW()
-area,76,つくば,"ツクバ,Tsukuba",76,17,1,NOW(),NOW()
-area,77,取手,"トリデ,Toride",77,17,1,NOW(),NOW()
-area,78,土浦,"ツチウラ,Tsuchiura",78,17,1,NOW(),NOW()
-area,79,水戸,"ミト,Mito",79,17,1,NOW(),NOW()
-area,80,宇都宮,"ウツノミヤ,Utsunomiya",80,18,1,NOW(),NOW()
+tag_type,tag_no,tag_name,hit_csv,order_no,parent_no
+country,1,Japan,"japan,ジャパン,ニホン,ニッポン,日本",1,0
+country,2,Asia,"asia,アジア,トウナンアジア,東南アジア,亜細亜",2,0
+country,3,Europe,"europe,ヨーロッパ,欧州",3,0
+region,4,北海道・東北,"ホッカイドウ,Hokkaido,Tohoku,東北,トウホク",4,1
+region,5,関東,"カントウ,Kanto",5,1
+region,6,中部,"チュウブ,Chubu,関西,Kansai",6,1
+region,7,近畿,"キンキ,kinki,関西,Kansai",7,1
+region,8,中国・四国,"チュウゴク,Chugoku,シコク,シコク",8,1
+region,9,九州・沖縄,"キュウシュウ,Kyushu,オキナワ,Okinawa",9,1
+pref,10,北海道,"ホッカイドウ,Hokkaido",10,4
+pref,11,青森県,"アオモリ,Aomori",11,4
+pref,12,岩手県,"イワテ,Iwate",12,4
+pref,13,宮城県,"ミヤギ,Miyagi",13,4
+pref,14,秋田県,"アキタ,Akita",14,4
+pref,15,山形県,"ヤマガタ,Yamagata",15,4
+pref,16,福島県,"フクシマ,Fukushima",16,4
+pref,17,茨城県,"イバラギ,Ibaraki",17,5
+pref,18,栃木県,"トチギ,Tochigi",18,5
+pref,19,群馬県,"グンマ,Gunma",19,5
+pref,20,埼玉県,"サイタマ,Saitama",20,5
+pref,21,千葉県,"チバ,Chiba",21,5
+pref,22,東京都,"トウキョウ,Tokyo",22,5
+pref,23,神奈川県,"カナガワ,Kanagawa",23,5
+pref,24,新潟県,"ニイガタ,Niigata",24,6
+pref,25,富山県,"トヤマ,Toyama",25,6
+pref,26,石川県,"イシカワ,Ishikawa",26,6
+pref,27,福井県,"フクイ,Fukui",27,6
+pref,28,山梨県,"ヤマナシ,Yamanashi",28,6
+pref,29,長野県,"ナガノ,Nagano",29,6
+pref,30,岐阜県,"ギフ,Gifu",30,6
+pref,31,静岡県,"シズオカ,Shizuoka",31,6
+pref,32,愛知県,"アイチ,Aichi",32,6
+pref,33,三重県,"ミエ,Mie",33,7
+pref,34,滋賀県,"シガ,Shiga",34,7
+pref,35,京都府,"キョウト,Kyoto",35,7
+pref,36,大阪府,"オオサカ,Osaka",36,7
+pref,37,兵庫県,"ヒョウゴ,Hyogo",37,7
+pref,38,奈良県,"ナラ,Nara",38,7
+pref,39,和歌山県,"ワカヤマ,Wakayama",39,7
+pref,40,鳥取県,"トットリ,Tottori",40,8
+pref,41,島根県,"シマネ,Shimane",41,8
+pref,42,岡山県,"オカヤマ,Okayama",42,8
+pref,43,広島県,"ヒロシマ,Hiroshima",43,8
+pref,44,山口県,"ヤマグチ,Yamaguchi",44,8
+pref,45,徳島県,"トクシマ,Tokushima",45,8
+pref,46,香川県,"カガワ,Kagawa",46,8
+pref,47,愛媛県,"エヒメ,Ehime",47,8
+pref,48,高知県,"コウチ,Kochi",48,8
+pref,49,福岡県,"フクオカ,Fukuoka",49,9
+pref,50,佐賀県,"サガ,Saga",50,9
+pref,51,長崎県,"ナガサキ,Nagasaki",51,9
+pref,52,熊本県,"クマモト,Kumamoto",52,9
+pref,53,大分県,"オオイタ,Oita",53,9
+pref,54,宮崎県,"ミヤザキ,Miyazaki",54,9
+pref,55,鹿児島県,"カゴシマ,Kagoshima",55,9
+pref,56,沖縄県,"オキナワ,Okinawa",56,9
+area,57,旭川,"アサヒカワ,Asahikawa",57,10
+area,58,函館,"ハコダテ,Hakodate",58,10
+area,59,帯広,"オビヒロ,Obihiro",59,10
+area,60,すすきの,"ススキノ,Susukino",60,10
+area,61,道東中標津,"ドウトウナカシベツ,Doutounakashibetsu",61,10
+area,62,北見,"キタミ,Kitami",62,10
+area,63,苫小牧,"トマコマイ,Tomakomai",63,10
+area,64,千歳,"チトセ,Chitose",64,10
+area,65,釧路,"クシロ,Kushiro",65,10
+area,66,八戸,"ハチノヘ,Hachinohe",66,11
+area,67,盛岡,"モリオカ,Morioka",67,12
+area,68,仙台,"センダイ,Sendai",68,13
+area,69,秋田,"アキタ,Akita",69,14
+area,70,由利本荘,"ユリホンジョウ,Yurihonjo",70,14
+area,71,川反,"カワバタ,Kawabata",71,14
+area,72,山形,"ヤマガタ,Yamagata",72,15
+area,73,郡山,"コオリヤマ,Koriyama",73,16
+area,74,福島,"フクシマ,Fukushima",74,16
+area,75,いわき,"イワキ,Iwaki",75,16
+area,76,つくば,"ツクバ,Tsukuba",76,17
+area,77,取手,"トリデ,Toride",77,17
+area,78,土浦,"ツチウラ,Tsuchiura",78,17
+area,79,水戸,"ミト,Mito",79,17
+area,80,宇都宮,"ウツノミヤ,Utsunomiya",80,18
+area,81,大田原,"オオタワラ,Otawara",81,18
+area,82,前橋,"マエバシ,Maebashi",82,19
+area,83,太田,"オオタ,Ota",83,19
+area,84,伊勢崎,"イセサキ,Isesaki",84,19
+area,85,高崎,"タカサキ,Takasaki",85,19
+area,86,桐生,"キリュウ,Kiryu",86,19
+area,87,川越,"カワゴエ,Kawagoe",87,20
+area,88,熊谷,"クマガヤ,Kumagaya",88,20
+area,89,大宮,"オオミヤ,Omiya",89,20
+area,90,草加,"ソウカ,Soka",90,20
+area,91,川口,"カワグチ,Kawaguchi",91,20
+area,92,浦和,"ウラワ,Urawa",92,20
+area,93,越谷,"コシガヤ,Koshigaya",93,20
+area,94,成田,"ナリタ,Narita",94,21
+area,95,稲毛海岸,"イナゲカイガン,Inagekaigan",95,21
+area,96,我孫子,"アビコ,Abiko",96,21
+area,97,新松戸,"シンマツド,Shinmatsudo",97,21
+area,98,千葉,"チバ,Chiba",98,21
+area,99,船橋,"フナバシ,Funabashi",99,21
+area,100,津田沼,"ツダヌマ,Tsudanuma",100,21
+area,101,柏,"カシワ,Kashiwa",101,21
+area,102,本八幡,"モトヤワタ,Motoyawata",102,21
+area,103,北千住,"キタセンジュ,Kitasenju",103,22
+area,104,阿佐ヶ谷,"アサガヤ,Asagaya",104,22
+area,105,綾瀬,"アヤセ,Ayase",105,22
+area,106,下北沢,"シモキタザワ,Shimokitazawa",106,22
+area,107,葛西,"カサイ,Kasai",107,22
+area,108,蒲田,"カマタ,Kamata",108,22
+area,109,亀戸,"カメイド,Kameido",109,22
+area,110,吉祥寺,"キチジョウジ,Kichijoji",110,22
+area,111,錦糸町,"キンシチョウ,Kinshicho",111,22
+area,112,銀座,"ギンザ,Ginza",112,22
+area,113,日本橋,"ニホンバシ,Nihonbashi",113,22
+area,114,駒込,"コマゴメ,Komagome",114,22
+area,115,恵比寿,"エビス,Ebisu",115,22
+area,116,五反田,"ゴタンダ,Gotanda",116,22
+area,117,高田馬場,"タカダノババ,Takadanobaba",117,22
+area,118,国分寺,"コクブンジ,Kokubunji",118,22
+area,119,三田,"ミタ,Mita",119,22
+area,120,四谷,"ヨツヤ,Yotsuya",120,22
+area,121,秋葉原,"アキハバラ,Akihabara",121,22
+area,122,十条,"ジュウジョウ,Jujo",122,22
+area,123,渋谷,"シブヤ,Shibuya",123,22
+area,124,三軒茶屋,"サンゲンヂャヤ,Sangenjaya",124,22
+area,125,水道橋,"スイドウバシ,Suidobashi",125,22
+area,126,小岩,"コイワ,Koiwa",126,22
+area,127,上野,"ウエノ,Ueno",127,22
+area,128,新橋,"シンバシ,Shinbashi",128,22
+area,129,新宿,"シンジュク,Shinjuku",129,22
+area,130,新小岩,"シンコイワ,Shinkoiwa",130,22
+area,131,世田谷,"セタガヤ,Setagaya",131,22
+area,132,西麻布,"ニシアザブ,Nishiazabu",132,22
+area,133,赤羽,"アカバネ,Akabane",133,22
+area,134,赤坂,"アカサカ,Akasaka",134,22
+area,135,浅草橋,"アサクサバシ,Asakusabashi",135,22
+area,136,巣鴨,"スガモ,Sugamo",136,22
+area,137,足立,"アダチ,Adachi",137,22
+area,138,代官山,"ダイカンヤマ,Daikanyama",138,22
+area,139,台場,"ダイバ,Daiba",139,22
+area,140,台東,"タイトウ,Taito",140,22
+area,141,大森,"オオモリ,Omori",141,22
+area,142,大塚,"オオツカ,Otsuka",142,22
+area,143,池袋,"イケブクロ,Ikebukuro",143,22
+area,144,中目黒,"ナカメグロ,Nakameguro",144,22
+area,145,中野,"ナカノ,Nakano",145,22
+area,146,町田,"マチダ,Machida",146,22
+area,147,東大和,"ヒガシヤマト,Higashiyamato",147,22
+area,148,東中野,"ヒガシナカノ,Higashinakano",148,22
+area,149,湯島,"ユシマ,Yushima",149,22
+area,150,八王子,"ハチオウジ,Hachioji",150,22
+area,151,八丁堀,"ハッチョウボリ,Hatchobori",151,22
+area,152,品川,"シナガワ,Shinagawa",152,22
+area,153,福生,"フッサ,Fussa",153,22
+area,154,麻布十番,"アザブジュウバン,Azabujuban",154,22
+area,155,白金,"シロカネ,Shirokane",155,22
+area,156,目黒,"メグロ,Meguro",156,22
+area,157,練馬,"ネリマ,Nerima",157,22
+area,158,六本木,"ロッポンギ,Roppongi",158,22
+area,159,立川,"タチカワ,Tachikawa",159,22
+area,160,伊勢原,"イセハラ,Isehara",160,23
+area,161,大船,"オオフナ,Ofuna",161,23
+area,162,横浜,"ヨコハマ,Yokohama",162,23
+area,163,関内,"カンナイ,Kannai",163,23
+area,164,小田原,"オダワラ,Odawara",164,23
+area,165,新横浜,"シンヨコハマ,Shinyokohama",165,23
+area,166,川崎,"カワサキ,Kawasaki",166,23
+area,167,大和,"ヤマト,Yamato",167,23
+area,168,平塚,"ヒラツカ,Hiratsuka",168,23
+area,169,湘南,"ショウナン,Shonan",169,23
+area,170,南林間,"ミナミリンカン,Minamirinkan",170,23
+area,171,本厚木,"ホンアツギ,Honatsugi",171,23
+area,172,新潟,"ニイガタ,Niigata",172,24
+area,173,上越,"ジョウエツ,Joetsu",173,24
+area,174,富山,"トヤマ,Toyama",174,25
+area,175,金沢,"カナザワ,Kanazawa",175,26
+area,176,福井,"フクイ,Fukui",176,27
+area,177,甲府,"コウフ,Kofu",177,28
+area,178,長野,"ナガノ,Nagano",178,29
+area,179,松本,"マツモト,Matsumoto",179,29
+area,180,上田,"ウエダ,Ueda",180,29
+area,181,岐阜,"ギフ,Gifu",181,30
+area,182,浜松,"ハママツ,Hamamatsu",182,31
+area,183,袋井,"フクロイ,Fukuroi",183,31
+area,184,富士,"フジ,Fuji",184,31
+area,185,静岡,"シズオカ,Shizuoka",185,31
+area,186,今池,"イマイケ,Imaike",186,32
+area,187,蒲郡,"ガマゴオリ,Gamagori",187,32
+area,188,栄,"サカエ,Sakae",188,32
+area,189,岡崎,"オカザキ,Okazaki",189,32
+area,190,知立,"チリュウ,Chiryu",190,32
+area,191,豊橋,"トヨハシ,Toyohashi",191,32
+area,192,津島,"ツシマ,Tsushima",192,32
+area,193,名古屋,"ナゴヤ,Nagoya",193,32
+area,194,金山,"カナヤマ,Kanayama",194,32
+area,195,四日市,"ヨッカイチ,Yokkaichi",195,33
+area,196,栗東,"リットウ,Ritto",196,34
+area,197,草津,"クサツ,Kusatsu",197,34
+area,198,木屋町,"キヤマチ,Kiyamachi",198,35
+area,199,西京極,"ニシキョウゴク,Nishikyogoku",199,35
+area,200,河原町,"カワラマチ,Kawaramachi",200,35
+area,201,祇園,"ギオン,Gion",201,35
+area,202,なんば,"ナンバ,Namba",202,36
+area,203,堺,"サカイ,Sakai",203,36
+area,204,守口,"モリグチ,Moriguchi",204,36
+area,205,心斎橋,"シンサイバシ,Shinsaibashi",205,36
+area,206,西大橋,"ニシオオハシ,Nishiohashi",206,36
+area,207,大阪,"オオサカ,Osaka",207,36
+area,208,泉大津,"イズミオオツ,Izumiotsu",208,36
+area,209,東大阪,"ヒガシオオサカ,Higashiosaka",209,36
+area,210,道頓堀,"ドウトンボリ,Dotonbori",210,36
+area,211,難波,"ナニワ,Naniwa",211,36
+area,212,梅田,"ウメダ,Umeda",212,36
+area,213,八尾,"ヤオ,Yao",213,36
+area,214,北新地,"キタシンチ,Kitashinchi",214,36
+area,215,北堀江,"キタホリエ,Kitahorie",215,36
+area,216,枚方,"ヒラカタ,Hirakata",216,36
+area,217,淀川,"ヨドガワ,Yodogawa",217,36
+area,218,茨木,"イバラキ,Ibaraki",218,36
+area,219,本町,"ホンマチ,Honmachi",219,36
+area,220,三宮,"サンノミヤ,Sannomiya",220,37
+area,221,州本,"シュウホン,Shuhon",221,37
+area,222,西宮,"ニシノミヤ,Nishinomiya",222,37
+area,223,尼崎,"アマガサキ,Amagasaki",223,37
+area,224,神戸,"コウベ,Kobe",224,37
+area,225,明石,"アカシ,Akashi",225,37
+area,226,加古川,"カコガワ,Kakogawa",226,37
+area,227,生駒,"イコマ,Ikoma",227,38
+area,228,天理,"テンリ,Tenri",228,38
+area,229,和歌山,"ワカヤマ,Wakayama",229,39
+area,230,米子,"ヨナゴ,Yonago",230,40
+area,231,松江,"マツエ,Matsue",231,41
+area,232,岡山,"オカヤマ,Okayama",232,42
+area,233,流川,"ナガレカワ,Nagarekawa",233,43
+area,234,福山,"フクヤマ,Fukuyama",234,43
+area,235,広島,"ヒロシマ,Hiroshima",235,43
+area,236,五日市,"イツカイチ,Itsukaichi",236,43
+area,237,山口,"ヤマグチ,Yamaguchi",237,44
+area,238,柳井,"ヤナイ,Yanai",238,44
+area,239,防府,"ホウフ,Hofu",239,44
+area,240,宇部,"ウベ,Ube",240,44
+area,241,周南,"シュウナン,Shunan",241,44
+area,242,岩国,"イワクニ,Iwakuni",242,44
+area,243,徳島,"トクシマ,Tokushima",243,45
+area,244,高松,"タカマツ,Takamatsu",244,46
+area,245,松山,"マツヤマ,Matsuyama",245,47
+area,246,高知,"コウチ,Kochi",246,48
+area,247,西中州,"ニシナカス,Nishinakasu",247,49
+area,248,中州,"ナカス,Nakasu",248,49
+area,249,直方,"ノオガタ,Nogata",249,49
+area,250,天神,"テンジン,Tenjin",250,49
+area,251,北九州,"キタキュウシュウ,Kitakyushu",251,49
+area,252,薬院,"ヤクイン,Yakuin",252,49
+area,253,大村,"オオムラ,Omura",253,51
+area,254,思案橋,"シアンバシ,Shianbashi",254,51
+area,255,熊本,"クマモト,Kumamoto",255,52
+area,256,大分,"オオイタ,Oita",256,53
+area,257,宮崎,"ミヤザキ,Miyazaki",257,54
+area,258,鹿児島,"カゴシマ,Kagoshima",258,55
+area,259,天文館,"テンモンカン,Tenmonkan",259,55
+area,260,霧島,"キリシマ,Kirishima",260,55
+area,261,出水,"イズミ,Izumi",261,55
+area,262,沖縄,"オキナワ,Okinawa",262,56
+area,263,宜野湾,"ギノワン,Ginowan",263,56
+area,264,那覇,"ナハ,Naha",264,56
+area,265,宮古島,"ミヤコジマ,Miyakojima",265,56
+service,266,トーナメント,tournament,266,0
+service,267,リングゲーム,ringgame,267,0
+service,268,カジノゲーム,casinogame,268,0
+service,269,初心者講習,"ショシンシャコウシュウ,BeginnersTeaching",269,0
+service,270,貸しテーブル,"カシテーブル,RentalTable",270,0
+service,271,フード提供,"フオードテイキョウ,SupplyFood",271,0
+service,272,アルコール提供,"アルコールテイキョウ,SupplyAlcohol",272,0
+service,273,スマホ充電,"スマホジュウデン,ChargeBatterySmartphone",273,0
+service,274,飲み放題ブラン,"ノミホウダイプラン,All you can drink",274,0
+service,275,近くに駐車場,"チカクニチュウシャジョウ,neerCarParking",275,0
+service,276,Wi-Fi,"ワイファイ,wifi",276,0
+service,277,喫煙所あり,"タバコ,キツエンジョ,kituenjo,smoking",277,0
+game,278,NLH,"No limit holdem,ノーリミットホールデム,ホールデム",278,0
+game,279,PLO,"Pot Limit Omaha,ポットリミットオマハ,オマハ",279,0
+game,280,MIX,ミックス,280,0
+game,281,Other,その他ゲーム,281,0
+table,282,Heads-Up,"HeadsUp,ヘッズアップ",282,0
+table,283,3-MAX,"3MAX,threemax,スリーマックス",283,0
+table,284,4-MAX,"4MAX,fourmax,フォーマックス",284,0
+table,285,5-MAX,"5MAX,fivemax,ファイブマックス",285,0
+table,286,6-MAX,"6MAX,sixmax,シックスマックス",286,0
+table,287,7-MAX,"7MAX,sevenmax,セブンマックス",287,0
+table,288,8-MAX,"8MAX,eightmax,エイトマックス",288,0
+table,289,9-MAX,"9MAX,ninemax,ナインマックス",289,0
+table,290,10-MAX,"10MAX,tenmax,テンマックス",290,0
+prize,291,コイン,"coin,pokerwebcoin,ポーカーウェブコイン",291,0
+prize,292,JOPT権利,"jopt,ジェイオーピーティー,ケンリ,権利,ticket",292,0
+prize,293,戦国権利,"sengoku,センゴク,ケンリ,権利,戦国,ticket",293,0
+prize,294,Spaide権利,"spadie,スペイディー,ケンリ,権利,ticket",294,0
+prize,295,TPC権利,"tpc,ティーピーシー,ケンリ,権利,ticket",295,0
+prize,296,チケット,ticket,296,0
+brand,297,JOPT,"JapanOpenPokerTour,ジャパンオープンポーカーツアー,ジェイオーピーティー",297,0
+brand,298,戦国,"sengoku,センゴク",298,0
+brand,299,SPAIDIE,スペイディー,299,0
+brand,300,MASTER,マスター,300,0
+brand,301,TPC,"ティーピーシー,トップオブポーカー,Top of Poker Championship",301,0
+media,302,PokerGuild,"pg,ポーカーギルド",302,0
+media,303,ポーカーニュース,pokernews,303,0
+news_cate,304,インタビュー,interview,304,0
+room,305,アキバギルド,"AG,エージー,アキハバラ",305,0
+room,306,イケブクロギルド,"イケブクロギルド,ikebukuroguild,IG,ikegi,イケギ",306,0
+room,307,カジクエ,"カジノクエスト,QC,カジクエ,casinoquest,秋葉原カジノクエスト",307,0
+room,308,GGPL新宿,"GGPLshinjuku,GoodGamePokerLiveShinjuku,グッドゲームポーカーライブシンジュク,ジージーピーエルシンジュク,GoodGamePokerLive新宿",308,0
+room,309,GGPL渋谷,"GGPLShibuya,GoodGamePokerLiveShibuya,グッドゲームポーカーライブシブヤ,ジージーピーエルシブヤ,GoodGamePokerLive渋谷",309,0
+room,310,GGPL名古屋,"GGPLNagoya,GoodGamePokerLiveNagoya,グッドゲームポーカーライブナゴヤ,ジージーピーエルナゴヤ,GoodGamePokerLive名古屋",310,0
+room,311,GGPL梅田,"GGPLUmeda,GoodGamePokerLiveUmeda,グッドゲームポーカーライブウメダ,ジージーピーエルウメダ,GoodGamePokerLive梅田",311,0
+room,312,KKLP渋谷,"KKLPshibuya,KKLivePokerShibuya,ケーケーライブシブヤ,ケーケピーエルシブヤ,KKLIVE POKER SHIBUYA",312,0
+room,313,KKLP新宿,"KKLPshinjuku,KKLivePokerShinjuku,ケーケーライブシンジュク,ケーケピーエルシンジュク,KKLIVE POKER SHINJUKU",313,0
+room,314,赤坂デポ,"SAP,SALON de poker,デポ,サロンデポーカーアカサカ,SALON de poker赤坂",314,0
+room,315,CLT,"CLT,Casino Live Tokyo,カジノライブトウキョウ,シーエルティー,Casino Live Tokyo",315,0
+room,316,ナゴヤギルド,"NG,NagoyaGulid,ナゴヤギルド,ナゴギ",316,0
+room,317,池袋リレイズ,"RERAISE,ikebukuroReraise,イケブクロリレイズ,リレイズ",317,0
+room,318,ネコカジ秋葉原,"nekokajiakihabara,ネコカジアキハバラ,ネコカジ",318,0
+room,319,ガットショット上野池之端,"GS,gatShotUenoikenohataten,ガットショットウエノイケノハタテン",319,0
+room,320,RIC GAMES SHINJUKU,"RICGAMESSHINJUKU,リックゲームズシンジュク,リック",320,0
+room,321,ネコカジ新宿,"nekokajiakihabara,ネコカジシンジュク,ネコカジ",321,0
+room,322,横浜eight,"yokohamaeight,ヨコハマエイト,エイト",322,0
+room,323,BUBBLE 恵比寿,"bubbleebisu,バブルエビス,バブル",323,0
+room,324,化猫ポーカー倶楽部,"バケネコ,bakeneko,化猫ポーカー倶楽部,化猫,ポーカー倶楽部,倶楽部",324,0
+room,325,【五反田】Queen Pocket,"クイーンポケット,QueenPocket,QueenPocket五反田,五反田,ゴタンダ,クイーン,ポケット",325,0
+room,326,ALL IN POKER CLUB,"ALLINPOKERCLUB,新宿,シンジュク,オールイン,ALL IN",326,0
+room,327,【飯田橋】BIG BOSS JAPAN,"BIGBOSSJAPAN,ビッグボスジャパン,ビッグボス,飯田橋,イイダバシ,BIGBOSS,ジャパン",327,0
+room,328,PukuPuku新橋,"PukuPuku,プクプク,プクプク新橋,新橋,シンバシ,アミューズメント,シーシャ,Shisha",328,0
+room,329,ASOBIBAR Lecoeur,"Lecoeur,赤羽,赤羽レコウル,アカバネ,レコウル,アソビバー,ASOBIBAR",329,0
+room,330,BACKDOOR GINZA,"BACKDOORGINZA,バックドア銀座,銀座,ギンザ,バックドア,BACKDOOR",330,0
+room,331,BACKDOOR KICHIJOJI,"BACKDOORKICHIJOJI,バックドア吉祥寺,吉祥寺,キチジョウジ,バックドア,BACKDOOR",331,0
+room,332,BACKDOOR SHIMOKITA,"BACKDOORSHIMOKITA,バックドア下北沢,下北沢,シモキタザワ,バックドア,BACKDOOR",332,0
+room,333,BACKDOOR 宇都宮,"BACKDOORTOCHIGI,バックドア宇都宮,宇都宮,ウツノミヤ,バックドア,BACKDOOR",333,0
+room,334,BACKDOOR 浅草橋,"BACKDOORASAKUSA,バックドア浅草橋,浅草橋,アサクサバシ,バックドア,BACKDOOR",334,0
+room,335,BACKDOOR宇都宮東,"BACKDOORTOCHIGI,バックドア宇都宮東,宇都宮東,ウツノミヤヒガシ,バックドア,BACKDOOR",335,0
+room,336,BACKDOOR十三,"BACKDOOR13,バックドア十三,十三,ジュウサン,バックドア,BACKDOOR",336,0
+room,337,BARRLE AKASAKA,"BARRLEAKASAKA,バールレ赤坂,赤坂,アカサカ,バールレ,BARRLE",337,0
+room,338,BARRLE IKEBUKURO,"BARRLEIKEBUKURO,バールレ池袋,池袋,イケブクロ,バールレ,BARRLE",338,0
+room,339,BARRLE LasVegas,"BARRLELasVegas,バールレラスベガス,ラスベガス,LasVegas,バールレ,BARRLE",339,0
+room,340,BARRLE NEST 高田馬場,"BARRLENEST 高田馬場,バールレネスト高田馬場,高田馬場,タカダノババ,バールレ,BARRLE,ネスト,NEST",340,0
+room,341,BLOW 渋谷,"BLOW渋谷,ブロウ渋谷,渋谷,シブヤ,ブロウ,BLOW",341,0
+room,342,BUBBLE 恵比寿店,"BUBBLE恵比寿店,バブル恵比寿店,恵比寿,エビス,バブル,BUBBLE",342,0
+room,343,BUBBLE六本木,"BUBBLE六本木,バブル六本木,六本木,ロッポンギ,バブル,BUBBLE",343,0
+room,344,casa 上野店,"casa上野店,カサ上野店,上野,ウエノ,カサ,casa",344,0
+room,345,casa 大宮,"casa大宮,カサ大宮,大宮,オオミヤ,カサ,casa",345,0
+room,346,Casino Lounge Egg,"CasinoLoungeEgg,カジノラウンジエッグ,カジノ,ラウンジ,エッグ,Casino,Lounge,Egg",346,0
+room,347,Casino THE CLASS,"CasinoTHECLASS,カジノザクラス,カジノ,ザクラス,Casino,THE CLASS",347,0
+room,348,DDPT/PMJ,"DDPT/PMJ,ディーディーピーティー,ピーマッジ,DDPT,PMJ",348,0
+room,349,DOUBLE BELLY BUSTER,"DOUBLEBELLYBUSTER,ダブルベリーバスター,ダブル,ベリー,バスター,DOUBLE,BELLY,BUSTER",349,0
+room,350,EGP EBISU,"EGPEBISU,エグピーエビス,恵比寿,エビス,EGP",350,0
+room,351,Family Pot YOKOHAMA,"FamilyPotYOKOHAMA,ファミリーポット横浜,横浜,ヨコハマ,ファミリー,ポット,Family Pot",351,0
+room,352,FELLOWS,フェローズ,352,0
+room,353,GoodGame & Bluff,"GoodGame&Bluff,グッドゲームアンドブラフ,グッドゲーム,ブラフ,GoodGame,Bluff",353,0
+room,354,Gutshot,ガットショット,354,0
+room,355,JOPT,"JAPANOPENPOKERTOUR,ジャパンオープンポーカーツアー,JOPT,ジェイオーピーティー",355,0
+room,356,JERRYS POKER,"JERRYSPOKER,ジェリーズポーカー,ジェリーズ,JERRYS",356,0
+room,357,KAMATA BACKDOOR,"KAMATABACKDOOR,バックドア蒲田,蒲田,カマタ,バックドア,BACKDOOR",357,0
+room,358,KK UNIVERSE,"KKUNIVERSE,ケーケーユニバース,ユニバース,KK,UNIVERSE",358,0
+room,359,Luck Spider 六本木,"LuckSpider 六本木,ラックスパイダー六本木,六本木,ロッポンギ,ラック,スパイダー,Luck Spider",359,0
+room,360,MUSASHI POKER ROOM,"MUSASHIPOKER ROOM,ムサシポーカールーム,ムサシ,MUSASHI",360,0
+room,361,Nuts&Star 蒲田,"Nuts&Star蒲田,ナッツスター蒲田,蒲田,カマタ,ナッツ,スター,Nuts,Star",361,0
+room,362,POKER JUNKIE,"POKERJUNKIEROPPONGI,ポーカージャンキー六本木,六本木,ロッポンギ,ジャンキー,JUNKIE",362,0
+room,363,poker room GRAVITY,"pokerroomGRAVITY,ポーカールームグラビティ,グラビティ,ポーカールーム,GRAVITY",363,0
+room,364,PokerLeague五反田,"PokerLeague五反田,ポーカーリーグ五反田,五反田,ゴタンダ,リーグ,League",364,0
+room,365,PokerRoom P3,"PokerRoomP3,ポーカールームピースリー,ピースリー,ポーカールーム,P3",365,0
+room,366,Pool&Darts STELLA,"Pool&DartsSTELLA,プールアンドダーツステラ,プール,ダーツ,ステラ,Pool,Darts,STELLA",366,0
+room,367,RALLY's CASINO,"RALLY'sCASINO,ラリーズカジノ,ラリーズ,カジノ,RALLY",367,0
+room,368,ResPo,レスポ,368,0
+room,369,RIC GAMES SHINJUKU,"RICGAMESSHINJUKU,リックゲームズ新宿,新宿,シンジュク,リック,ゲームズ,RIC",369,0
+room,370,starry eye,"starryeye,スタリーアイ,スタリー,アイ,starry,eye",370,0
+room,371,Tha Bullets,"ThaBullets,ザバレッツ,バレッツ,Bullets",371,0
+room,372,THE CROWN,"THECROWN,ザクラウン,クラウン,CROWN",372,0
+room,373,Poker House POM,"TsudanumaPokerHousePOM,津田沼ポーカーハウスポム,津田沼,ツダヌマ,ポム,POM",373,0
+room,374,WARUPURU,ワルプルル,374,0
+room,375,ZEAL8池袋,"ZEAL8池袋,ゼイルエイト池袋,池袋,イケブクロ,ゼイル,エイト,ZEAL8",375,0
+room,376,My room 小田原店,"ポーカースポット小田原,マイルーム小田原,小田原,オダワラ,ポーカースポット,マイルーム,Myroom",376,0
+room,377,My room 新横浜店,"ポーカースポット新横浜,マイルーム新横浜,新横浜,シンヨコハマ,ポーカースポット,マイルーム,Myroom",377,0
+room,378,My room 大和店,"ポーカースポット大和,マイルーム大和,大和,ヤマト,ポーカースポット,マイルーム,Myroom",378,0
+room,379,My room 町田店,"ポーカースポット町田,マイルーム町田,町田,マチダ,ポーカースポット,マイルーム,Myroom",379,0
+room,380,ライブエース横浜,"ライブエース横浜,ライブエースヨコハマ,横浜,ヨコハマ,ライブエース",380,0
+room,381,我龍ポーカースタジアム,"我龍ポーカースタジアム,ガリュウポーカースタジアム,我龍,ガリュウ,スタジアム",381,0
+room,382,BIG BOSS国分寺店,"BIG BOSS国分寺,ビッグボス国分寺,国分寺,コクブンジ,ビッグボス,BIG BOSS",382,0
+room,383,葛西カジノバーH3AL,"葛西カジノバーH3AL,カサイカジノバーH3AL,葛西,カサイ,カジノバー,H3AL",383,0
+room,384,銀座パラハ倶楽部,"銀座パラハ倶楽部,ギンザパラハクラブ,銀座,ギンザ,パラハ,倶楽部",384,0
+room,385,新橋 ナインスリー,"新橋ナインスリー,シンバシナインスリー,新橋,シンバシ,ナインスリー,93",385,0
+room,386,新宿ネオパラハ,"新宿ネオパラハ,シンジュクネオパラハ,新宿,シンジュク,ネオパラハ",386,0
+room,387,池袋 ベガス,"池袋ベガス,イケブクロベガス,池袋,イケブクロ,ベガス,Vegas",387,0
+room,388,中野TRIGGER,"中野TRIGGER,ナカノトリガー,中野,ナカノ,トリガー,TRIGGER",388,0
+room,389,猫遊技場,"猫遊技場,ネコユウギジョウ,ネコカジ,猫",389,0
+room,390,明大前EDGE,"明大前EDGE,メイダイマエエッジ,明大前,メイダイマエ,エッジ,EDGE",390,0
+room,391,六本木 ナインスリー,"六本木ナインスリー,ロッポンギナインスリー,六本木,ロッポンギ,ナインスリー,93",391,0
