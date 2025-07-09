@@ -59,7 +59,7 @@ SELECT * FROM admin_user WHERE enabled=0;
 以下のテーブルは実装完了しており、テスト用ダミーデータが含まれています。
 
 #### core ディレクトリ
-- `admin_user.sql` - 管理者ユーザー（21ユーザー登録済み）
+- `admin_user.sql` - 管理者ユーザー（22ユーザー登録済み）
 - `admin_user_org.sql` - 管理者ユーザー組織関連付け
 - `brand.sql` - ブランド（20ブランド登録済み）
 - `brand_event.sql` - ブランドイベント関連付け
@@ -67,6 +67,11 @@ SELECT * FROM admin_user WHERE enabled=0;
 - `org.sql` - 組織（21組織登録済み）
 - `owner.sql` - オーナー（20オーナー登録済み）
 - `owner_as_info.sql` - オーナー詳細情報
+- `owner_category.sql` - オーナーカテゴリ
+- `owner_category_photo.sql` - オーナーカテゴリ写真
+- `owner_ring_price.sql` - オーナーリング価格
+- `owner_ring_table.sql` - オーナーリングテーブル
+- `owner_url.sql` - オーナーURL
 - `pickup_item.sql` - ピックアップアイテム（183アイテム登録済み）
 - `pickup_item_as_game.sql` - ゲーム型ピックアップアイテム（107件）
 - `pickup_item_as_pr.sql` - PR型ピックアップアイテム（10件）
@@ -93,12 +98,7 @@ SELECT * FROM admin_user WHERE enabled=0;
 - `_admin_org_img.sql` - 管理者組織画像
 - `_media.sql` - メディア
 - `_news.sql` - ニュース
-- `_owner_category.sql` - オーナーカテゴリ
-- `_owner_category_photo.sql` - オーナーカテゴリ写真
 - `_owner_html.sql` - オーナーHTML
-- `_owner_ring_price.sql` - オーナーリング価格
-- `_owner_ring_table.sql` - オーナーリングテーブル
-- `_owner_url.sql` - オーナーURL
 - `_room_book_pickup_item.sql` - ルーム予約ピックアップアイテム
 
 #### cmn ディレクトリ（共通）
@@ -111,10 +111,11 @@ SELECT * FROM admin_user WHERE enabled=0;
 #### tag ディレクトリ
 - `_tag_content.sql` - タグコンテンツ
 
-## 登録済みデータ概要（2025-06-25時点）
+## 登録済みデータ概要（2025-08-02時点）
 
 ### 管理ユーザー
-- **masterユーザー**: 全権限（permission_bit_flag: 929）
+- **masterユーザー**: 全権限（permission_bit_flag: 1023）
+- **event_adminユーザー**: イベント管理権限（permission_bit_flag: 1023）
 - **room_admin_01〜20**: 各店舗の管理者（permission_bit_flag: 122）
 
 ### 店舗データ（room）
@@ -157,7 +158,12 @@ SELECT * FROM admin_user WHERE enabled=0;
 5. **ファイル命名規則**：先頭に`_`が付くファイルは未完成（ダミーデータなし）
 
 ## 更新履歴
-- **2025-06-25**: 最新データベースダンプと同期
+- **2025-08-02**: 最新データベースダンプと同期（core_2025-07-02.sql）
+  - event_adminユーザー追加（イベント管理権限）
+  - 管理ユーザー22件（master + event_admin + room_admin_01〜20）
+  - 実運用データまで反映（アクセス履歴、ログイン状況含む）
+  - 完成済みテーブル24件、未完成7件の状況確認
+- **2025-06-25**: トーナメントデータ大幅拡充
   - トーナメントデータ40件追加
   - ピックアップアイテム183件（トーナメント66、ゲーム107、PR10）
   - 管理ユーザー21件（master + room_admin_01〜20）
