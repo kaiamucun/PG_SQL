@@ -23,7 +23,7 @@ CREATE TABLE owner_as_info (
 START TRANSACTION;
 
 INSERT INTO owner_as_info(owner_no,tel,address,lat,lon,access,table_count,payment_method) VALUES(1,'03-6206-8948','東京都千代田区外神田1-11-6 小暮ビル4F',35.6994575,139.7710186,'秋葉原駅徒歩3分',6,'現金、クレカ、PokerWebCoin');
-INSERT INTO owner_as_info(owner_no,tel,address,lat,lon,access,table_count,payment_method) VALUES(2,'03-6912-7815','東京都豊島区東池袋1丁目22-5 サンケエビルB1',35.7284,139.7152,'池袋駅徒歩4分',7,'現金、クレカ、PokerWebCoin');
+INSERT INTO owner_as_info(owner_no,tel,address,lat,lon,access,table_count,payment_method) VALUES(2,'03-6912-7815','東京都豊島区東池袋1丁目22-5 サンケエビルB1',35.729740,139.715800,'池袋駅徒歩4分',7,'現金、クレカ、PokerWebCoin');
 INSERT INTO owner_as_info(owner_no,tel,address,lat,lon,access,table_count,payment_method) VALUES(3,'03-5244-4193','東京都千代田区外神田3-14-9 第26東ビル7F',35.701008,139.771273,'秋葉原駅徒歩5分',5,'現金、クレカ、PokerWebCoin');
 INSERT INTO owner_as_info(owner_no,tel,address,lat,lon,access,table_count,payment_method) VALUES(4,'03-6233-8879','東京都新宿区歌舞伎町1-25-3 西武新宿駅前ビルWAMALL 3F',35.692865,139.70303,'西武新宿駅徒歩1分',8,'現金、クレカ、PokerWebCoin');
 INSERT INTO owner_as_info(owner_no,tel,address,lat,lon,access,table_count,payment_method) VALUES(5,'03-6427-8010','東京都渋谷区宇田川町12-9 JouleShibuya 10F',35.6615385,139.6981893,'渋谷駅ハチ公口徒歩5分',9,'現金、クレカ、PokerWebCoin');

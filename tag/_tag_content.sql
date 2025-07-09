@@ -18,7 +18,7 @@ CREATE TABLE tag_content (
 START TRANSACTION;
 
 INSERT INTO tag_content (search_type, ref_no, tag_no, enabled, created_at, updated_at) VALUES
-
+('room',1,305,1,NOW(),NOW());
 COMMIT;
 
 
