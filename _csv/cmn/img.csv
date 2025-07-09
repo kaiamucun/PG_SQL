@@ -1,1 +1,11 @@
-img_no,img_path
+img_no,img_path,enabled,created_at,updated_at
+101,https://example.com/images/owner1/interior1.jpg,1,NOW(),NOW()
+102,https://example.com/images/owner1/interior2.jpg,1,NOW(),NOW()
+103,https://example.com/images/owner1/cast1.jpg,1,NOW(),NOW()
+104,https://example.com/images/owner1/cast2.jpg,1,NOW(),NOW()
+105,https://example.com/images/owner1/cast3.jpg,1,NOW(),NOW()
+106,https://example.com/images/owner1/food1.jpg,1,NOW(),NOW()
+107,https://example.com/images/owner1/food2.jpg,1,NOW(),NOW()
+108,https://example.com/images/owner1/tournament_a_winner.jpg,1,NOW(),NOW()
+109,https://example.com/images/owner1/tournament_b_winner.jpg,1,NOW(),NOW()
+110,https://example.com/images/owner1/other1.jpg,1,NOW(),NOW()

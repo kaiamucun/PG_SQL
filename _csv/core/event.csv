@@ -1,1 +1,15 @@
-event_no,event_kind,event_name,start_date,end_date,main_price,main_price_unit,venue_name
+event_no,event_kind,event_name,start_date,end_date,main_price,main_price_unit,venue_name,enabled,created_at,updated_at
+1,japan,2025 Tokyo #02,20250717,20250721,100000,JPY,ベルサール高田馬場,1,NOW(),NOW()
+2,japan,2025 Sapporo #02,20250912,20250915,100000,JPY,サッポロファクトリー,1,NOW(),NOW()
+3,japan,2025 Tokyo #03,20251009,20251013,100000,JPY,ベルサール高田馬場,1,NOW(),NOW()
+4,japan,2025 Osaka #02,20251030,20251103,100000,JPY,堂島リバーフォーラム,1,NOW(),NOW()
+5,japan,2026 Tokyo #01,20251227,20260104,100000,JPY,ベルサール高田馬場,1,NOW(),NOW()
+6,japan,U-30 2025 SUMMER,20250822,20250824,60000,JPY,ベルサール飯田橋,1,NOW(),NOW()
+7,japan,SPADIE POKER LEAGUE FINAL Season38th,20250808,20250817,-1,JPY,ベルサール新宿,1,NOW(),NOW()
+8,japan,戦国ポーカーツアー2025-秋の陣-,20250912,20250915,60000,JPY,ベルサール新宿,1,NOW(),NOW()
+9,japan,SHINJUKU POKER FES,20250627,20250627,1000000,JPY,Humax新宿,1,NOW(),NOW()
+10,japan,TPC Season 14,20250724,20250727,1500000,JPY,難波御堂筋ホール,1,NOW(),NOW()
+11,japan,TPC Season 15,20251211,20251214,1500000,JPY,難波御堂筋ホール,1,NOW(),NOW()
+12,japan,百花繚乱,20250607,20250608,1000000,JPY,DEER GOLD,1,NOW(),NOW()
+13,japan,XPT,20251121,20251124,2500000,JPY,NTTクレドホール,1,NOW(),NOW()
+14,global,WSOP2025,20250527,20250716,10000,USD,LasVegas,1,NOW(),NOW()

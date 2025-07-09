@@ -1,1 +1,2 @@
-search_type,ref_no,tag_no
+search_type,ref_no,tag_no,enabled,created_at,updated_at
+room,1,305,1,NOW(),NOW()
