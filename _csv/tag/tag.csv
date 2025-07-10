@@ -6,7 +6,7 @@ region,4,北海道・東北,"ホッカイドウ,Hokkaido,Tohoku,東北,トウホ
 region,5,関東,"カントウ,Kanto",5,1
 region,6,中部,"チュウブ,Chubu,関西,Kansai",6,1
 region,7,近畿,"キンキ,kinki,関西,Kansai",7,1
-region,8,中国・四国,"チュウゴク,Chugoku,シコク,シコク",8,1
+region,8,中国・四国,"チュウゴク,Chugoku,シコク",8,1
 region,9,九州・沖縄,"キュウシュウ,Kyushu,オキナワ,Okinawa",9,1
 pref,10,北海道,"ホッカイドウ,Hokkaido",10,4
 pref,11,青森県,"アオモリ,Aomori",11,4
