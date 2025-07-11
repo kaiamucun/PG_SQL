@@ -411,6 +411,11 @@ INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('roo
 INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('room',389,'猫遊技場','猫遊技場,ネコユウギジョウ,ネコカジ,猫',389,0);
 INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('room',390,'明大前EDGE','明大前EDGE,メイダイマエエッジ,明大前,メイダイマエ,エッジ,EDGE',390,0);
 INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('room',391,'六本木 ナインスリー','六本木ナインスリー,ロッポンギナインスリー,六本木,ロッポンギ,ナインスリー,93',391,0);
+INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('room',391,'六本木 ナインスリー','六本木ナインスリー,ロッポンギナインスリー,六本木,ロッポンギ,ナインスリー,93,roppongi',391,0);
+INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('area',392,'飯田橋','イイダバシ.Iidabashi',392,22);
+INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('area',393,'明大前','メイダイマエ,Meidaimae',393,22);
+INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('area',394,'大門','ダイモン,Daimon',394,22);
+INSERT INTO tag(tag_type,tag_no,tag_name,hit_csv,order_no,parent_no) VALUES('area',395,'十三','ジュウソウ,Jusou',395,36);
 
 COMMIT;
 
